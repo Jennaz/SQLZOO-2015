@@ -1,0 +1,7 @@
+1. The example shows the population of 'France'. Strings should be in 'single quotes';
+Show the population of Germany
+
+Answer:
+SELECT population FROM world
+  WHERE name = 'Germany'
+  
