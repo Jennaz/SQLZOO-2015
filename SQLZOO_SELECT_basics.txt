@@ -1,8 +1,13 @@
-1. The example shows the population of 'France'. Strings should be in 'single quotes';
-Show the population of Germany
-
-Answer:
-
+1. Show the population of Germany : 
+#Answer:
 SELECT population FROM world
   WHERE name = 'Germany'
+
+2. Show the name and per capita gdp: gdp/population for each country where the area is over 5,000,000 km2 : 
+#Answer:
+SELECT name, gdp/population FROM world
+  WHERE area > 5000000
+
+
+
   
