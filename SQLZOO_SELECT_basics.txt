@@ -2,6 +2,7 @@
 Show the population of Germany
 
 Answer:
+
 SELECT population FROM world
   WHERE name = 'Germany'
   
