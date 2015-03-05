@@ -7,7 +7,28 @@ SELECT population FROM world
 #Answer:
 SELECT name, gdp/population FROM world
   WHERE area > 5000000
+  
+3.Show the name and continent where the area is less than 2000 and the gdp is more than 5000000000
+#Answer:
+SELECT name , continent
+FROM world
+WHERE population < 2000000
+AND gdp > 5000000000
 
+4.Show the name and the population for 'Denmark', 'Finland', 'Norway', 'Sweden' 
+#Answer
+SELECT name, population FROM world 
+WHERE name IN ('Ireland', 'Iceland',
+                 'Denmark')
 
+5.Show each country that begins with G
+#Answer
+SELECT name FROM world
+  WHERE name LIKE 'D%'
+  
+6.Show the area in 1000 square km. Show area/1000 instead of area
+#Answer
+SELECT name, area FROM world
+WHERE area BETWEEN 250000 AND 300000
 
   
