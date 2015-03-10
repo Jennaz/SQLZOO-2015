@@ -39,11 +39,19 @@ WHERE population >=10000000
 Group by continent
 
 8.List the continents that have a total population of at least 100 million. 
-#Answer:
+#Answer1:
 SELECT continent
 from world
 group by continent
 Having SUM(population) >= 100000000
+#Answer2 (if we do not want use Having statement, we also can use where statement for this quesiton)
+SELECT continent
+FROM (SELECT continent,sum(population) as PopulationSum
+FROM world
+GROUP BY continent) AS new_table
+where new_table.PopulationSum >=100000000
+
+
 
 
 
